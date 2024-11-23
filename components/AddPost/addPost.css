@@ -1,0 +1,129 @@
+.addPost {
+    width: 95%;
+    max-width: 600px; 
+    border-radius: 10px;
+    height: auto; 
+    margin: 10px auto; 
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #fff; 
+    padding: 15px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.addPost:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.addPostContainer {
+    padding: 15px;
+}
+
+.addPostTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.addPostPic {
+    width: 45px; 
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ddd; 
+    transition: transform 0.3s ease; 
+}
+
+.addPostPic:hover {
+    transform: scale(1.1); 
+}
+
+.addPostInput {
+    border: none;
+    width: 100%;
+    margin-left: 15px; 
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+}
+
+.addPostInput::placeholder {
+    color: #aaa; 
+    font-style: italic; 
+}
+
+.addPostInput:focus {
+    outline: none;
+    border-bottom: 2px solid #007bff; 
+    transition: border-bottom 0.2s ease;
+}
+
+.addPostHr {
+    margin: 15px 0; 
+    border: none;
+    border-top: 1px solid #ddd; 
+}
+
+.addPostBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addPostOptions {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.addPostOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.addPostOption:hover {
+    transform: scale(1.1); 
+}
+
+.addPostOptionText {
+    margin-left: 5px; 
+    font-size: 14px;
+    color: #555; 
+    font-weight: bold;
+}
+
+.postButton {
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 8px;
+    background-color: #007bff; 
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.postButton:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+@media screen and (max-width: 768px) {
+    .addPost {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .addPostInput {
+        font-size: 14px;
+    }
+
+    .addPostOptionText {
+        display: none; 
+    }
+}
